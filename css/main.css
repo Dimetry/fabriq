@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.placeholder{
+    border: #ddd 1px dashed;
+    min-height: 50px;
+    margin-bottom: 1em;
+    position: relative;
+}
+.placeholder:before{
+    content: attr(data-area);
+    position: absolute;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    color: #ddd;
+    text-align: center;
+    z-index: -1;
+}
+.widget{
+    position: relative;
+    margin-bottom: 1em;
+}
+.widget .btn-group{
+    display: none;
+    position: absolute;
+    z-index: 10001;
+}
+.widget .edit,
+.widget .remove{
+    display: none;
+}
+.widget:hover .btn-group{
+    display: block;
+}
+
+.placeholder .widget:hover .edit,
+.placeholder .widget:hover .remove{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
